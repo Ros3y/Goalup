@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Goalup/static/css/main.30e898e7.css",
-    "main.js": "/Goalup/static/js/main.2fef771e.js",
+    "main.js": "/Goalup/static/js/main.5f68690f.js",
     "index.html": "/Goalup/index.html",
     "main.30e898e7.css.map": "/Goalup/static/css/main.30e898e7.css.map",
-    "main.2fef771e.js.map": "/Goalup/static/js/main.2fef771e.js.map"
+    "main.5f68690f.js.map": "/Goalup/static/js/main.5f68690f.js.map"
   },
   "entrypoints": [
     "static/css/main.30e898e7.css",
-    "static/js/main.2fef771e.js"
+    "static/js/main.5f68690f.js"
   ]
 }
