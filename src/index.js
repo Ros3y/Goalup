@@ -1,17 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import StorageEnhancer from "./StorageEnhancer";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import App from "./App";
+import reducers from "./reducers";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+const preloadedState = JSON.parse(window.localStorage.getItem("goals"));
+
+console.log(preloadedState);
+
 root.render(
-  <React.StrictMode>
+  <Provider store={createStore(reducers, preloadedState, StorageEnhancer)}>
     <App />
-  </React.StrictMode>
+  </Provider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
