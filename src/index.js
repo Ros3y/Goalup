@@ -8,12 +8,17 @@ import App from "./App";
 import reducers from "./reducers";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const preloadedState = JSON.parse(window.localStorage.getItem("goals"));
 
-console.log(preloadedState);
+function preloadCheck() {
+  if (window.localStorage.getItem("goals") === null) {
+    return undefined;
+  } else {
+    return JSON.parse(window.localStorage.getItem("goals"));
+  }
+}
 
 root.render(
-  <Provider store={createStore(reducers, preloadedState, StorageEnhancer)}>
+  <Provider store={createStore(reducers, preloadCheck(), StorageEnhancer)}>
     <App />
   </Provider>
 );
