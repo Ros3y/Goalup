@@ -20,7 +20,9 @@ function AddStudent() {
   const dispatch = useDispatch();
   return (
     <div className="add-student">
-      <button onClick={SubmitStudent}>+</button>
+      <button onClick={SubmitStudent}>
+        <span className="material-symbols-outlined">add_circle</span>
+      </button>
       <input
         placeholder="Add Student"
         type="text"

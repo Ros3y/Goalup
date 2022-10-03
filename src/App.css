@@ -62,16 +62,11 @@ body {
 }
 
 .add-student button {
+  border: none;
   background-color: transparent;
-  border: solid 1px rgb(174, 212, 129);
-  border-radius: 50%;
-  min-width: 40px;
-  max-width: 40px;
-  min-height: 40px;
-  max-height: 40px;
+  font-size: 24px;
   width: 40px;
   height: 40px;
-  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,10 +76,13 @@ body {
   outline: none;
 }
 
+.add-student button .material-symbols-outlined {
+  font-size: 44px;
+}
+
 .add-student button:hover,
 .add-student button:active {
-  background-color: rgb(174, 212, 129);
-  color: white;
+  background-color: transparent;
 }
 
 .student-list {
@@ -318,10 +316,9 @@ body {
 }
 
 .create-goal-pop-up__header button {
-  border: solid 1px red;
   background-color: transparent;
+  border: none;
   color: red;
-  border-radius: 50%;
   font-size: 24px;
   width: 36px;
   height: 36px;
@@ -331,7 +328,7 @@ body {
 .create-goal-pop-up__header button:hover,
 .create-goal-pop-up__header button:active {
   border: none;
-  background-color: red;
+  background-color: transparent;
   color: white;
   border-radius: 50%;
   font-size: 24px;
