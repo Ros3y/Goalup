@@ -28,7 +28,7 @@ function CreateGoal(props) {
           <div style={{ width: "36px", height: "36px" }} />
           <h2>Create a Goal</h2>
           <button onClick={() => props.onCancel()}>
-            <span class="material-symbols-outlined">cancel</span>
+            <span className="material-symbols-outlined">cancel</span>
           </button>
         </div>
         <br></br>
